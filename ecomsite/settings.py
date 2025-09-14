@@ -37,7 +37,8 @@ LOGOUT_REDIRECT_URL = 'goodbye'
 
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = "/var/www/ecomsite/media"
+
 
 
 # Application definition
@@ -134,8 +135,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_FILES_DIRS = [ BASE_DIR / 'static' ]
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_DIRS = [ BASE_DIR / 'static' ]
+STATIC_ROOT = "/var/www/ecomsite/staticfiles"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
